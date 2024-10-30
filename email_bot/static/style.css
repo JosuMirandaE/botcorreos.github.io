@@ -1,0 +1,331 @@
+/* Reset y estilos base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    opacity: 0.1;
+    z-index: 0;
+    border-radius: 50%;
+}
+
+/* Título */
+h1 {
+    font-size: 26px;
+    color: #4e54c8;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin: 15px 0 8px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+/* Campos de entrada */
+input[type="text"], input[type="file"], textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+input[type="text"]:focus, textarea:focus, input[type="file"]:focus {
+    border-color: #8f94fb;
+    background-color: #f0f0ff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(79, 85, 255, 0.2);
+}
+
+/* Área de texto */
+textarea {
+    resize: none;
+    height: 120px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Botón de envío */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4e54c8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(78, 84, 200, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-submit:hover {
+    background-color: #8f94fb;
+    transform: translateY(-2px);
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Mejoras de diseño */
+input[type="text"]:hover, textarea:hover, input[type="file"]:hover {
+    border-color: #d1d1d1;
+}
+
+label, h1 {
+    color: #4e54c8;
+}
+
+/* Efecto de fondo */
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.5), transparent 80%);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Estilos de navegación */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 0;
+    background-color: #4e54c8;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Contenedor de la página */
+.container {
+    max-width: 500px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+}
+
+h1 {
+    color: #4e54c8;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.option-buttons a {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.gmail-btn {
+    background-color: #ff6f61;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+}
+
+.option-buttons a:hover {
+    opacity: 0.9;
+}
+
+/* Imagen */
+.image-waifu {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Botón */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #25D366;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-submit:hover {
+    background-color: #34b973;
+    transform: translateY(-3px);
+}
+
+/* Botón de Regreso */
+.btn-back {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4e54c8;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-back:hover {
+    background-color: #5f6ab8;
+    transform: translateY(-2px);
+}
+
+/* Barra de Navegación */
+header nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4e54c8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Iconos en botones */
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Archivos estaticos*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.container {
+    margin: 20px;
+}
+
+/* Estilo específico para el botón de Registrarse con Gmail */
+.register-btn {
+    background-color: #4285F4; /* Color característico de Google */
+}
+
+.register-btn:hover {
+    background-color: #3367d6;
+}

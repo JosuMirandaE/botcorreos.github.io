@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Correo con Gmail</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/whatsapp">WhatsApp</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container gmail-container">
+        <h1>📧 Enviar un Correo de Gmail</h1>
+        <form action="/send_email" method="POST" enctype="multipart/form-data">
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" required placeholder="Escribe el asunto aquí...">
+
+            <label for="body">Mensaje:</label>
+            <textarea id="body" name="body" rows="8" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+            <label for="attachment">Adjuntar Archivo:</label>
+            <input type="file" id="attachment" name="attachment">
+
+            <label for="recipients">Lista de Correos:</label>
+            <input type="file" id="recipients" name="recipients" required>
+
+            <button type="submit" class="btn-submit gmail-btn">Enviar Correo</button>
+        </form>
+    </div>
+</body>
+</html>
+

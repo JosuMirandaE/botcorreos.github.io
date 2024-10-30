@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/gmail">Gmail</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Enviar un Mensaje de WhatsApp</h1>
+        <form action="/send_whatsapp" method="POST" enctype="multipart/form-data">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="8" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+            <label for="recipients">Lista de Teléfonos:</label>
+            <input type="file" id="recipients" name="recipients" required>
+
+            <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
+    </div>
+</body>
+</html>
